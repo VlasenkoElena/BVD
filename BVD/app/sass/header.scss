@@ -6,9 +6,18 @@
     min-height: 1043px;
     &-logo {
         margin-left: 729px;
-        min-width: 165px;
-        min-height: 123px;
+        width: 180px;
+        height: 180px;
+        position: relative;
         background-color: #350f2a;
         border-radius: 100%;
+        top: -110px;
+        &--img {
+            width: 100px;
+            height: 75px;
+            position: absolute;
+            top: 62px;
+            left: 40px;
+        }
     }
 }
