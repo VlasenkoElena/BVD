@@ -1,0 +1,14 @@
+.header {
+    background: url(../img/header-bg.png);
+    background-size: cover;
+    padding-top: 58px;
+    max-width: 1920px;
+    min-height: 1043px;
+    &-logo {
+        margin-left: 729px;
+        min-width: 165px;
+        min-height: 123px;
+        background-color: #350f2a;
+        border-radius: 100%;
+    }
+}
