@@ -1,6 +1,24 @@
 .review {
     width: 100%;
     min-height: 786px;
-    background: url(../img/review-bg.png);
-    padding: 155px 0 0 75px;
+    background: linear-gradient(rgba(67, 46, 61, .7)), url(../img/review-bg.png) no-repeat center;
+    background-size: cover;
+    padding-top: 157px;
+    &-content {
+        max-width: 1160px;
+        margin: auto;
+    }
+    &-stars {
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    &-author {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 40px;
+        &--name {
+            margin-left: 30px;
+        }
+    }
 }

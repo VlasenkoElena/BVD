@@ -28,21 +28,17 @@ a {
     }
 }
 
-.h3 {
-    font: 700 24px/30px 'PT Sans', sans-serif;
-    text-transform: uppercase;
-}
-
 input {
     outline: none;
 }
 
 body {
-    font: 30px/30px 'Roboto', sans-serif;
+    font: 30px/35px 'Roboto', sans-serif;
     color: white;
 }
 
 @import 'header.scss';
+@import 'prizes.scss';
 @import 'review.scss';
 @import 'footer.scss';
 
