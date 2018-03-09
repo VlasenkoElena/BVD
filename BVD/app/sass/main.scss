@@ -33,35 +33,27 @@ input {
 }
 
 body {
-    font: 30px/35px 'Roboto', sans-serif;
-    color: white;
+    font: 30px/25px 'Roboto', sans-serif;
+    color: #191919;
 }
 
 @import 'header.scss';
 @import 'prizes.scss';
+@import 'works.scss';
 @import 'review.scss';
 @import 'footer.scss';
 
 /*BUTTON*/
 
 .button {
-    color: grey;
-    font-size: 20px;
-    font-style: italic;
-    width: 195px;
-    height: 50px;
-    outline: none;
+    width: 301px;
+    height: 43px;
+    border: none;
+    font-size: 18px;
     cursor: pointer;
-    border: 1px solid grey;
-    background-color: transparent;
     &:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         transform: scale(1.01);
-    }
-    &-works {
-        padding-top: 15px;
-        color: white;
-        border: 1px solid white;
     }
 }
 
