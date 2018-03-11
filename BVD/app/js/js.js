@@ -56,6 +56,31 @@ $('.team-slider').slick({
     ]
 });
 
+//IZOTOP
+/*var grid = $('.portfolio-works').isotope({
+    itemSelector: '.works_item',
+    layoutMode: 'masonry',
+    masonry: {
+        gutter: 20
+      }
+});*/
+var gridItem = $('.works-card').isotope({
+    itemSelector: '.works_item',
+    layoutMode: 'masonry',
+    masonry: {
+        gutter: 10
+      }
+})
+var grid = $('.portfolio-works');
+
+$('.portfolio_filter').click(function() {
+    let filterValue = $( this ).attr('data-filter');
+    grid.isotope({ filter: filterValue });
+
+    $(".portfolio_filter").removeClass("active-filter");
+    $(this).addClass("active-filter");
+});
+
 
 //WOW 
 wow = new WOW({

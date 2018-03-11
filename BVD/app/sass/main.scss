@@ -55,29 +55,11 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         transform: scale(1.01);
     }
-}
-
-
-/*ABOUT*/
-
-.about {
-    margin-top: 120px;
-    height: 600px;
-    &-img {
-        background: url(../img/about-us.png);
-        background-size: cover;
-        background-position: center;
-        height: 550px;
-        padding-top: 75px;
-        @media all and (max-width: 750px) {}
-    }
-    &-content {
-        margin-top: 80px;
-        font-size: 20px;
+    &--blue {
+        background-color: #aee3ff;
+        margin: 32px 0 80px;
     }
 }
-
-@media screen and (max-width: 992px) {}
 
 
 /*SERVICES*/

@@ -20,4 +20,13 @@
             left: 40px;
         }
     }
+    &-form {
+        max-width: 745px;
+        height: 220px;
+        background-color: #43033c;
+    }
+    &-input {
+        max-width: 300px;
+        height: 44px;
+    }
 }
