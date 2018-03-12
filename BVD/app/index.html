@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
     <!-- Slick CSS -->
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
@@ -23,29 +24,60 @@
 <body>
 
     <header class="header wow fadeInUp animated">
-        <div class="container" id="home">
+        <div class="header-container" id="home">
             <div class="header-logo">
                 <a href="#"><img class="header-logo--img" src="img/bvdlogo.png" alt="LOGO"></a>
             </div>
-            <div>
-                <p>До конца конкурса осталось</p>
-                <div>
+            <div class="header-content">
+                <p class="header-subtitle">До конца конкурса осталось:</p>
+                <div class="header-timer">
+                    <div class="header-t">
+                        <div class="header-timer--block days num"></div>
+                        <div class="header-timer--name">
+                            Дней
+                        </div>
+                    </div>
+                    <div class="header-timer--el2">
+                        <div class="header-timer--block hours num"></div>
+                        <div class="header-timer--name">
+                            Часов
+                        </div>
+                    </div>
+                    <div class="header-timer--el">
+                        <div class="header-timer--block minutes num"></div>
+                        <div class="header-timer--name">
+                            Минут
+                        </div>
+                    </div>
+                    <div class="header-timer--el2">
+                        <div class="header-timer--block seconds num"></div>
+                        <div class="header-timer--name">Секунд</div>
+                    </div>
+                </div>
 
-                </div>
-                <div>
-                <h2>Выиграй сертификат в размере 50 000р на услуги BVDBEAUTY</h2>
-                    <form action="" class="header-form">
-                        <input type="text" placeholder="Имя*" class="header-input">
-                        <input type="number" placeholder="Тел*" class="header-input">
-                        <input type="email" placeholder="E-mail*" class="header-input">
-                        <button class="button button--blue">Участвовать</button>
-                    </form>
-                </div>
+                <h1 class="h1">Выиграй <br> <span class="h1--color">сертификат</span> в размере <span class="h1--prize">50 000</span> на услуги <span class="h1--color">BVDBEAUTY</span></h1>
+                <form action="" class="header-form">
+                    <label class="header-form--row">
+                                <input type="text" placeholder="Имя*" class="header-input">
+                                <input type="email" placeholder="E-mail*" class="header-input">
+                            </label>
+                    <label class="header-form--row">
+                                <input type="text" placeholder="Тел*" class="header-input">
+                                <button class="button header-btn">Участвовать</button>
+                            </label>
+                    <label class="header-checkbox"><input type="checkbox"> Участвовать</label>
+                </form>
+
             </div>
         </div>
 
-
-
+        <div id="popup" class="popup">
+            <span class="popup-close">X</span>
+            <p>Участвуй в конкурсе и выиграй</p>
+            <h3 class="h3"> <span class="h1--color">сертификат</span> в размере <span class="h1--prize">50 000</span> на услуги <span class="h1--color">BVDBEAUTY</span></h3>
+            <button class="popup-btn">Подробнее</button>
+        </div>
+        <div class="popup-overlay"></div>
     </header>
 
 
@@ -65,7 +97,7 @@
                         </div>
                         <h4>1 место</h4>
                         <div class="prizes-text">
-                            <p>1 подарочный сертификат на <strong>50 000 р</strong></p>
+                            <p>1 подарочный <br> сертификат на <strong>50 000 р</strong></p>
                         </div>
                     </div>
 
@@ -74,7 +106,7 @@
                             <img src="img/section2/img2.png" class="" alt="photo">
                         </div>
                         <h4>2 место</h4>
-                        <p class="prizes-text"><strong>3</strong> сертификата на лечение волос "гидропластика"</p>
+                        <p class="prizes-text"><strong>3</strong> сертификата на <br> лечение волос "гидропластика"</p>
                     </div>
 
                     <div class="prizes-item">
@@ -82,10 +114,8 @@
                             <img src="img/section2/img3.png" class="" alt="photo">
                         </div>
                         <h4>3 место</h4>
-                        <p class="prizes-text"><strong>5</strong> сертификатов маникюр + покрытие гель лак</p>
+                        <p class="prizes-text"><strong>5</strong> сертификатов <br> маникюр + покрытие гель лак</p>
                     </div>
-
-
                 </div>
 
                 <div class="prizes-info">
@@ -102,45 +132,45 @@
                 <p>(примеры последних работ)</p>
 
 
-                        <div class="portfolio-works">
-                                <div class="works-slider wow slideInRight" data-wow-delay=".1s">
-                                    <div class="works-card">
-                                    <div class="web works_item ">
-                                      <img src="img/works/color1.png" alt="">
-                                    </div>
-                                    <div class="web works_item ">
-                                      <img src="img/works/color2.png" alt="">
-                                    </div>
-                                    <div class="graphic works_item works_item__big ">
-                                        <img src="img/works/color4.png" alt="">
-                                    </div>
-                                    <div class="advertising works_item works_item__medium">
-                                        <img src="img/works/color3.png" alt="">
-                                    </div>
-                                    <div class="logo works_item works_item__big">
-                                        <img src="img/works/color6.png" alt="">
-                                    </div>
-                                    <div class="graphic works_item">
-                                        <img src="img/works/color5.png" alt="">
-                                    </div>
-                                    
-                                    </div>
-                                </div>
-
-                                <div class="wow slideInRight" data-wow-delay=".1s">
-                                        <ul class="portfolio_menu">
-                                            <li><a class="portfolio_filter active-filter" data-filter="*">Колористика</a></li>
-                                            <li> <a class="portfolio_filter" data-filter=".web">Укладки</a></li>
-                                            <li> <a class="portfolio_filter" data-filter=".graphic">Стрижки</a></li>
-                                            <li> <a class="portfolio_filter" data-filter=".fashion">Лечение</a></li>
-                                            <li> <a class="portfolio_filter" data-filter=".logo">Маникюр и педикюр</a></li>
-                                            <li> <a class="portfolio_filter" data-filter=".advertising">Макияж</a></li>
-                                            <li> <a class="portfolio_filter" data-filter=".advertising">Брови</a></li>
-                                        </ul>
-                                </div>
+                <div class="portfolio-works">
+                    <div class="works-slider wow slideInRight" data-wow-delay=".1s">
+                        <div class="works-card">
+                            <div class="web works_item ">
+                                <img src="img/works/color1.png" alt="">
+                            </div>
+                            <div class="web works_item ">
+                                <img src="img/works/color2.png" alt="">
+                            </div>
+                            <div class="graphic works_item works_item__big ">
+                                <img src="img/works/color4.png" alt="">
+                            </div>
+                            <div class="advertising works_item works_item__medium">
+                                <img src="img/works/color3.png" alt="">
+                            </div>
+                            <div class="logo works_item works_item__big">
+                                <img src="img/works/color6.png" alt="">
+                            </div>
+                            <div class="graphic works_item">
+                                <img src="img/works/color5.png" alt="">
                             </div>
 
-                
+                        </div>
+                    </div>
+
+                    <div class="wow slideInRight" data-wow-delay=".1s">
+                        <ul class="portfolio_menu">
+                            <li><a class="portfolio_filter active-filter" data-filter="*">Колористика</a></li>
+                            <li> <a class="portfolio_filter" data-filter=".web">Укладки</a></li>
+                            <li> <a class="portfolio_filter" data-filter=".graphic">Стрижки</a></li>
+                            <li> <a class="portfolio_filter" data-filter=".fashion">Лечение</a></li>
+                            <li> <a class="portfolio_filter" data-filter=".logo">Маникюр и педикюр</a></li>
+                            <li> <a class="portfolio_filter" data-filter=".advertising">Макияж</a></li>
+                            <li> <a class="portfolio_filter" data-filter=".advertising">Брови</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
                 <button class="button works-btn">Участвовать</button>
                 <p>*полный список процедур будет выслан на почту после заполнения формы</p>
 
@@ -383,7 +413,7 @@
     <footer class="footer">
         <h2 class="h2">He упусти шанс, выиграй сертификат</h2>
         <div class="wow fadeInUp animated" data-wow-delay=".1s">
-            <button class="button button--blue">Участвуй</button>
+            <button class="button footer-btn">Участвуй</button>
         </div>
         <div class="footer-copyriting">Boundstart 2017</div>
     </footer>

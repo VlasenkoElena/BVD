@@ -8,15 +8,70 @@ $(document).ready(function() {
         return false;
     });
 
-    (function($) {
-        $(function() {
-            $('.mobile-menu').on('click', function() {
-                $(this).closest('.header-menu').toggleClass('mobile-menu--open');
-            });
-        });
-    })(jQuery);
+    //TIMER
+    (function() {
 
+        var finishDate = new Date(2018, 3, 30); //подставляем финальную дату
+        var compareDate = finishDate.getTime();
+
+        var timer = setInterval(function() {
+            timeBetweenDates(compareDate);
+        }, 1000);
+
+        function timeBetweenDates(toDate) {
+
+            var difference = toDate - Date.now();
+
+            if (difference <= 0) { //если дата прошла, то таймер останавливаем
+
+                clearInterval(timer);
+
+            } else {
+
+                var seconds = Math.floor(difference / 1000);
+                var minutes = Math.floor(seconds / 60);
+                var hours = Math.floor(minutes / 60);
+                var days = Math.floor(hours / 24);
+
+                hours %= 24;
+                minutes %= 60;
+                seconds %= 60;
+
+                if (days < 10) days = '0' + days;
+                if (hours < 10) hours = '0' + hours;
+                if (minutes < 10) minutes = '0' + minutes;
+                if (seconds < 10) seconds = '0' + seconds;
+
+                $(".days").text(days);
+                $(".hours").text(hours);
+                $(".minutes").text(minutes);
+                $(".seconds").text(seconds);
+            }
+        }
+    })();
 });
+
+//POPUP
+$(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
+    event.preventDefault(); // выключaем стaндaртную рoль элементa
+    $('.header-overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+        function() { // пoсле выпoлнения предъидущей aнимaции
+            $('#popup')
+                .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+                .animate({ opacity: 1, top: '50%' }, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
+        });
+});
+/* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
+$('.popup-close, .overlay').click(function() { // лoвим клик пo крестику или пoдлoжке
+    $('#popup')
+        .animate({ opacity: 0, top: '45%' }, 200, // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+            function() { // пoсле aнимaции
+                $(this).css('display', 'none'); // делaем ему display: none;
+                $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+            }
+        );
+});
+
 
 /*WORK SLIDER*/
 
@@ -69,12 +124,12 @@ var gridItem = $('.works-card').isotope({
     layoutMode: 'masonry',
     masonry: {
         gutter: 10
-      }
+    }
 })
 var grid = $('.portfolio-works');
 
 $('.portfolio_filter').click(function() {
-    let filterValue = $( this ).attr('data-filter');
+    let filterValue = $(this).attr('data-filter');
     grid.isotope({ filter: filterValue });
 
     $(".portfolio_filter").removeClass("active-filter");

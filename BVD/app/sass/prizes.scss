@@ -17,7 +17,7 @@
         max-width: 1064px;
     }
     &-item {
-        max-width: 300px;
+        width: 303px;
         max-height: 385px;
         margin-left: 80px;
         background-color: white;
@@ -32,9 +32,7 @@
         overflow: hidden;
     }
     &-text {
-        
-        border: 1px solid blue;
-        margin: 35px 20px 50px;
+        margin: 35px 0 50px;
     }
     &-info {
         width: 215px;
@@ -55,6 +53,7 @@
         &--span {
             font-size: 20px;
             font-weight: 700;
+            margin-top: 10px;
         }
         &--little {
             font-size: 15px;
