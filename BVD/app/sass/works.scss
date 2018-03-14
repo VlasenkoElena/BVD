@@ -5,15 +5,33 @@
     font-size: 18px;
     text-align: center;
     background-color: #f8fafc;
+    &-slider {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1095px;
+        margin-left: 100px;
+    }
     &-card {
-        max-width: 750px;
-        margin: auto;
+        width: 750px;
+        max-height: 520px;
         display: flex;
     }
     &-column {
         display: flex;
         flex-direction: column;
-     
+        margin-right: 25px;
+    }
+    &-img {
+        width: 234px;
+        height: 291px;
+        vertical-align: middle;
+        &--bottom {
+            margin-top: 25px;
+        }
+    }
+    &-img2 {
+        width: 234px;
+        height: 200px;
     }
     &-btn {
         background-color: #3c0336;

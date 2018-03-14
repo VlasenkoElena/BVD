@@ -22,17 +22,17 @@
 </head>
 
 <body>
-    <!--MODAL WINDOW--> 
+    <!--MODAL WINDOW-->
     <div class="popup">
-            <div class="popup-window">
-                <span class="popup-close">х</span>
-                <div class="popup-content">
+        <div class="popup-window">
+            <span class="popup-close">х</span>
+            <div class="popup-content">
                 <p class="popup-text">Участвуй в конкурсе и выиграй</p>
                 <h3 class="h3">сертификат <span class="h3--color">в размере</span> <span class="h3--number">50 000p</span> на все услуги</h3>
                 <button class="popup-btn">Подробнее</button>
-                </div>
             </div>
         </div>
+    </div>
 
     <header class="header wow fadeInUp animated">
         <div class="header-container" id="home">
@@ -134,33 +134,93 @@
                 <h2 class="h2">Наши услуги:</h2>
                 <p>(примеры последних работ)</p>
 
+                <div id="slidorion" class="works-slider">
+                    <div id="slider">
+                        <div rel="section1" class="works-card">
+                            <div class="works-column">
+                                <img class="works-img" src="img/works/color1.png" alt="">
+                                <img class="works-img2 works-img--bottom" src="img/works/color3.png" alt="">
+                            </div>
+                            <div class="works-column">
 
-                <div class="portfolio-works">
+                                <img class="works-img2" src="img/works/color2.png" alt="">
+                                <img class="works-img works-img--bottom" src="img/works/color6.png" alt="">
+
+                            </div>
+                            <div class="works-column">
+                                <img class="works-img" src="img/works/color4.png" alt="">
+                                <img class="works-img2 works-img--bottom" src="img/works/color5.png" alt="">
+                            </div>
+                        </div>
+                        <div rel="section2" class="works-card">
+                            <div class="works-column">
+                                <img class="works-img" src="img/works/color1.png" alt="">
+                                <img class="works-img2 works-img--bottom" src="img/works/color3.png" alt="">
+                            </div>
+                            <div class="works-column">
+
+                                <img class="works-img2" src="img/works/color2.png" alt="">
+                                <img class="works-img works-img--bottom" src="img/works/color6.png" alt="">
+
+                            </div>
+                            <div class="works-column">
+                                <img class="works-img" src="img/works/color4.png" alt="">
+                                <img class="works-img2 works-img--bottom" src="img/works/color5.png" alt="">
+                            </div>
+
+                        </div>
+                        <div rel="section3" class="works-card">
+                            <div class="works-column">
+                                <img class="works-img" src="img/works/color1.png" alt="">
+                                <img class="works-img2 works-img--bottom" src="img/works/color3.png" alt="">
+                            </div>
+                            <div class="works-column">
+
+                                <img class="works-img2" src="img/works/color2.png" alt="">
+                                <img class="works-img works-img--bottom" src="img/works/color6.png" alt="">
+
+                            </div>
+                            <div class="works-column">
+                                <img class="works-img" src="img/works/color4.png" alt="">
+                                <img class="works-img2 works-img--bottom" src="img/works/color5.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="accordion">
+                        <div><a rel="section1">Колористика</a></div>
+                        <div><a rel="section2">Укладки</a></div>
+                        <div><a rel="section3">Стрижки</a></div>
+                    </div>
+                </div>
+
+                <!--<div class="portfolio-works">
                     <div class="works-slider wow slideInRight" data-wow-delay=".1s">
                         <div class="works-card">
                             <div class="works-column">
-                            <div class="web works_item ">
-                                <img src="img/works/color1.png" alt="">
-                            </div>
-                            <div class="web works_item ">
-                                <img src="img/works/color2.png" alt="">
-                            </div>
-                            </div>
-                            <div class="works-column">
-                            <div class="graphic works_item works_item__big ">
-                                <img src="img/works/color4.png" alt="">
-                            </div>
-                            <div class="advertising works_item works_item__medium">
-                                <img src="img/works/color3.png" alt="">
-                            </div>
+                                <div class="web works_item ">
+                                    <img src="img/works/color1.png" alt="">
+                                </div>
+                                <div class="web works_item ">
+                                    <img src="img/works/color2.png" alt="">
+                                </div>
                             </div>
                             <div class="works-column">
-                            <div class="logo works_item works_item__big">
-                                <img src="img/works/color6.png" alt="">
+                                <div class="graphic works_item works_item__big ">
+                                    <img src="img/works/color4.png" alt="">
+                                </div>
+                                <div class="advertising works_item works_item__medium">
+                                    <img src="img/works/color3.png" alt="">
+                                </div>
                             </div>
-                            <div class="graphic works_item">
-                                <img src="img/works/color5.png" alt="">
-                            </div>
+                            <div class="works-column">
+                                <div class="logo works_item works_item__big">
+                                    <img src="img/works/color6.png" alt="">
+                                </div>
+                                <div class="graphic works_item">
+                                    <img src="img/works/color5.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -176,7 +236,7 @@
                             <li> <a class="portfolio_filter" data-filter=".advertising">Брови</a></li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
 
 
                 <button class="button works-btn">Участвовать</button>
@@ -432,6 +492,10 @@
     <!--GOOGLE map-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap">
     </script>
+    <!--SLIDER-->
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.slidorion.js"></script>
+
     <script src="js/wow.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>

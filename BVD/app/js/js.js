@@ -77,15 +77,22 @@ $('.popup-close, .popup').click(function() { // лoвим клик пo крес�
 });
 
 
-/*WORK SLIDER*/
+/*WORKS SLIDER*/
+$(document).ready(function() {
+    $('#slidorion').slidorion({
+        speed: 1000,
+        interval: 4000,
+        effect: 'slideLeft'
+    });
+});
 
-$('.works-slider').slick({
+/*$('.works-slider').slick({
     dots: true,
     infinite: true,
     arrows: true,
     autoplay: true,
     autoplaySpeed: 1000
-});
+});*/
 
 
 //TEAM SLIDER 
