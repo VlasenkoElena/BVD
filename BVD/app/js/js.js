@@ -86,13 +86,13 @@ $(document).ready(function() {
     });
 });
 
-/*$('.works-slider').slick({
+$('#slider').slick({
     dots: true,
     infinite: true,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 1000
-});*/
+    autoplaySpeed: 5000
+});
 
 
 //TEAM SLIDER 
@@ -130,7 +130,7 @@ $('.team-slider').slick({
         gutter: 20
       }
 });*/
-var gridItem = $('.works-card').isotope({
+/*var gridItem = $('.works-card').isotope({
     itemSelector: '.works_item',
     layoutMode: 'masonry',
     masonry: {
@@ -145,7 +145,7 @@ $('.portfolio_filter').click(function() {
 
     $(".portfolio_filter").removeClass("active-filter");
     $(this).addClass("active-filter");
-});
+});*/
 
 
 //WOW 
