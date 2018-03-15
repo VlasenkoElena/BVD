@@ -6,7 +6,9 @@
     min-height: 1043px;
     font-size: 16px;
     &-container {
-        margin-left: 729px;
+        margin: auto;
+        max-width: 745px;
+        padding-left: 200px;
     }
     &-logo {
         width: 180px;
@@ -26,7 +28,8 @@
     }
     &-content {
         margin-top: -90px;
-        max-width: 744px;
+        min-width: 744px;
+        border: 1px solid red;
     }
     &-subtitle {
         text-transform: uppercase;
@@ -40,7 +43,8 @@
         &--block {
             background-color: #aee3ff;
             opacity: 0.8;
-            min-width: 175px;
+            max-width: 175px;
+            padding: 0 30px;
             height: 60px;
             font: 300 55px/1 'Roboto', sans-serif;
         }

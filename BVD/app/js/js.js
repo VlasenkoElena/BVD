@@ -3,7 +3,7 @@ $(document).ready(function() {
         e.preventDefault();
         var elementClick = $(this).attr("href");
         var destination = $(elementClick).offset().top; {
-            $('html,body').animate({ scrollTop: destination }, 1500);
+            $('html,body').animate({ scrollTop: destination }, 1000);
         }
         return false;
     });
