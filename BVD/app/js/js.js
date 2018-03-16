@@ -78,31 +78,13 @@ $('.popup-close, .popup').click(function() { // лoвим клик пo крес�
 
 
 /*WORKS SLIDER*/
-$(document).ready(function() {
-    $('#slidorion').slidorion({
-        speed: 1000,
-        interval: 4000,
-        effect: 'slideLeft'
-    });
-});
 
 $('#slider').slick({
     dots: true,
     infinite: true,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 5000
-});
-
-
-//TEAM SLIDER 
-
-$('.team-slider').slick({
-    dots: false,
-    slidesToShow: 3,
-    centerMode: true,
-    centerPadding: '-10px',
-    initialSlide: 1,
+    autoplaySpeed: 5000,
     responsive: [{
             breakpoint: 1100,
             settings: {
@@ -122,30 +104,7 @@ $('.team-slider').slick({
     ]
 });
 
-//IZOTOP
-/*var grid = $('.portfolio-works').isotope({
-    itemSelector: '.works_item',
-    layoutMode: 'masonry',
-    masonry: {
-        gutter: 20
-      }
-});*/
-/*var gridItem = $('.works-card').isotope({
-    itemSelector: '.works_item',
-    layoutMode: 'masonry',
-    masonry: {
-        gutter: 10
-    }
-})
-var grid = $('.portfolio-works');
 
-$('.portfolio_filter').click(function() {
-    let filterValue = $(this).attr('data-filter');
-    grid.isotope({ filter: filterValue });
-
-    $(".portfolio_filter").removeClass("active-filter");
-    $(this).addClass("active-filter");
-});*/
 
 
 //WOW 

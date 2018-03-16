@@ -1,3 +1,8 @@
+@import 'header.scss';
+@import 'prizes.scss';
+@import 'works.scss';
+@import 'review.scss';
+@import 'footer.scss';
 *,
  ::before,
  ::after {
@@ -12,7 +17,6 @@ li {
     text-decoration: none;
     transition: all .2s ease-in-out;
     cursor: pointer;
-    color: black;
     &:hover,
     &:focus {
         text-decoration: none;
@@ -64,15 +68,10 @@ body {
     color: #191919;
 }
 
-@import 'header.scss';
-@import 'prizes.scss';
-@import 'works.scss';
-@import 'review.scss';
-@import 'footer.scss';
 
 /*BUTTON*/
 
-.button {
+.btn {
     width: 301px;
     height: 43px;
     border: none;
@@ -85,10 +84,10 @@ body {
     &-works {
         background-color: #3c0336;
         margin: 80px auto 35px;
-    }
-    &-link {
-        margin-top: 10px;
-        color: white;
+        &--color {
+            color: white;
+            padding-top: 10px;
+        }
     }
 }
 
@@ -114,6 +113,10 @@ body {
         left: 35%;
         z-index: 1000;
         animation: fade .6s;
+        @media all and (max-width: 790px) {
+            width: 700px;
+            height: 415px;
+        }
     }
     &-close {
         width: 20px;
@@ -154,46 +157,3 @@ body {
     width: 100%;
     min-height: 637px;
 }
-
-
-/*WORKS*/
-
-
-/*.slick-prev {
-        left: -140px;
-        @media all and (max-width: 1200px) {
-            left: -25px;
-        }
-    }
-    .slick-prev::before {
-        content: url(../img/arrow-left.svg);
-    }
-    .slick-next {
-        right: -140px;
-        @media all and (max-width: 1200px) {
-            right: -25px;
-        }
-    }
-    .slick-next::before {
-        content: url(../img/arrow-right.svg);
-    }
-    .slick-dots li {
-        width: 10px;
-        height: 10px;
-        margin: 0 3px;
-    }
-    .slick-dots li button:before {
-        height: 10px;
-        width: 10px;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        content: '';
-        opacity: 0.75;
-    }
-    .slick-dots li.slick-active button:before {
-        background-color: #fff;
-    }
-    @media all and (max-width: 700px) {
-        min-height: 700px;
-    }
-}*/

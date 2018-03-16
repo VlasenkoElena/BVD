@@ -22,15 +22,16 @@
         margin-right: 25px;
     }
     &-img {
-        max-width: 234px;
-        max-height: 291px;
+        width: 33%;
+        height: 60%;
+        border: 1px solid red;
         &--bottom {
             margin-top: 25px;
         }
     }
     &-img2 {
-        max-width: 234px;
-        max-height: 200px;
+        width: 33%;
+        height: 40%;
     }
 }
 

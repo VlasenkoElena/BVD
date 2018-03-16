@@ -1,5 +1,5 @@
 .header {
-    background: url(../img/header-bg.png);
+    background: url(../img/header-bg.png) center;
     background-size: cover;
     padding-top: 58px;
     width: 100%;
@@ -36,17 +36,21 @@
     }
     &-timer {
         display: flex;
-        max-width: 744px;
+        width: 100%;
         margin: 15px 0 45px 0;
         text-align: center;
         text-transform: uppercase;
         &--block {
             background-color: #aee3ff;
             opacity: 0.8;
-            max-width: 175px;
+            width: 175px;
             padding: 0 30px;
             height: 60px;
             font: 300 55px/1 'Roboto', sans-serif;
+            @media all and (max-width: 790px) {
+                font-size: 40px;
+                width: 100px;
+            }
         }
         &--el {
             margin-left: 25px;
@@ -75,6 +79,9 @@
         &::placeholder {
             font-size: 18px;
             color: #191919;
+        }
+        @media all and (max-width: 790px) {
+            width: 200px;
         }
     }
     &-btn {
