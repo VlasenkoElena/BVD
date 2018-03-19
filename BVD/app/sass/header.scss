@@ -7,8 +7,7 @@
     font-size: 16px;
     &-container {
         margin: auto;
-        max-width: 745px;
-        padding-left: 200px;
+        width: 745px;
     }
     &-logo {
         width: 180px;
@@ -17,6 +16,7 @@
         background-color: #350f2a;
         border-radius: 100%;
         top: -110px;
+        left: 140px;
         &--img {
             width: 100px;
             height: 75px;
@@ -28,8 +28,12 @@
     }
     &-content {
         margin-top: -90px;
-        min-width: 744px;
-        border: 1px solid red;
+        width: 100%;
+        margin-left: 150px;
+        @media all and (max-width: 1000px) {
+            margin: auto;
+            width: 60%;
+        }
     }
     &-subtitle {
         text-transform: uppercase;
@@ -47,9 +51,11 @@
             padding: 0 30px;
             height: 60px;
             font: 300 55px/1 'Roboto', sans-serif;
-            @media all and (max-width: 790px) {
+            @media all and (max-width: 1000px) {
                 font-size: 40px;
                 width: 100px;
+                padding: 0 15px;
+                height: 40px;
             }
         }
         &--el {
@@ -65,10 +71,14 @@
     &-form {
         max-width: 745px;
         height: 220px;
-        padding: 15px 0 0 35px;
+        padding: 15px 35px;
         background-color: #43033c;
         &--row {
             display: flex;
+            @media all and (max-width: 1000px) {
+                width: 400px;
+                padding: 10px 15px;
+            }
         }
     }
     &-input {
@@ -82,6 +92,7 @@
         }
         @media all and (max-width: 790px) {
             width: 200px;
+            margin: 15px 0 0 15px;
         }
     }
     &-btn {
