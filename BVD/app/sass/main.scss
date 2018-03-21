@@ -33,11 +33,11 @@ li {
     &--prize {
         font-size: 54px;
         text-transform: none;
-        @media all and (max-width: 790px) {
+        @media all and (max-width: 1000px) {
             font-size: 40px;
         }
     }
-    @media all and (max-width: 790px) {
+    @media all and (max-width: 1000px) {
         font-size: 30px;
         line-height: 38px;
     }
@@ -121,12 +121,13 @@ body {
         background: url(../img/popup-bg.png);
         position: absolute;
         top: 20%;
-        left: 35%;
+        left: 25%;
         z-index: 1000;
         animation: fade .6s;
-        @media all and (max-width: 790px) {
+        @media all and (max-width: 1000px) {
             width: 700px;
             height: 415px;
+            left: 10%;
         }
     }
     &-close {
@@ -147,9 +148,9 @@ body {
         max-width: 470px;
         height: 245px;
         margin: 135px 0 0 400px;
-        border: 1px solid red;
-        @media all and (max-width: 100px) {
-            margin: 0;
+        @media all and (max-width: 1000px) {
+            margin: 50px 0 0 350px;
+            width: 350px;
         }
     }
     &-text {
@@ -165,6 +166,10 @@ body {
         border: none;
         color: white;
         background-color: #3c0336;
+        @media all and (max-width: 1000px) {
+            margin-left: 100px;
+            width: 220px;
+        }
     }
 }
 

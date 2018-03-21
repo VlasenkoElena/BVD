@@ -11,7 +11,7 @@ $(document).ready(function() {
     //TIMER
     (function() {
 
-        var finishDate = new Date(2018, 3, 30); //подставляем финальную дату
+        var finishDate = new Date(2018, 3, 30);
         var compareDate = finishDate.getTime();
 
         var timer = setInterval(function() {
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
             var difference = toDate - Date.now();
 
-            if (difference <= 0) { //если дата прошла, то таймер останавливаем
+            if (difference <= 0) {
 
                 clearInterval(timer);
 
@@ -76,6 +76,12 @@ $('.popup-close, .popup').click(function() { // лoвим клик пo крес�
         );
 });
 
+/*PHONE*/
+
+jQuery(function($) {
+    $("#phone").mask("+39(999) 999-9999");
+});
+
 
 /*WORKS SLIDER*/
 
@@ -84,24 +90,7 @@ $('#slider').slick({
     infinite: true,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 5000,
-    responsive: [{
-            breakpoint: 1100,
-            settings: {
-                slidesToShow: 2,
-                centerMode: false,
-                initialSlide: 0,
-            }
-        },
-        {
-            breakpoint: 640,
-            settings: {
-                slidesToShow: 1,
-                centerMode: false,
-                initialSlide: 0,
-            }
-        }
-    ]
+    autoplaySpeed: 5000
 });
 
 

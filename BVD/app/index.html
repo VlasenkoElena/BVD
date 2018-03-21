@@ -5,7 +5,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
     <!-- Slick CSS -->
@@ -32,7 +31,7 @@
             </div>
         </div>
     </div>
-
+    <!--HEADER-->
     <header class="header wow fadeInUp animated">
         <div class="header-container" id="home">
             <div class="header-logo">
@@ -68,13 +67,13 @@
                 <h1 class="h1">Выиграй <br> <span class="h1--color">сертификат</span> в размере <span class="h1--prize">50 000</span> на услуги <span class="h1--color">BVDBEAUTY</span></h1>
                 <form action="" class="header-form" id='form'>
                     <label class="header-form--row">
-                                <input type="text" placeholder="Имя*" class="header-input">
-                                <input type="email" placeholder="E-mail*" class="header-input">
-                            </label>
+                            <input type="text" placeholder="Имя*" class="header-input">
+                            <input type="email" placeholder="E-mail*" class="header-input">
+                    </label>
                     <label class="header-form--row">
-                                <input type="text" placeholder="Тел*" class="header-input">
-                                <button class="btn header-btn">Участвовать</button>
-                            </label>
+                            <input id="phone" type="text" placeholder="Тел*" class="header-input">
+                            <button class="btn header-btn">Участвовать</button>
+                    </label>
                     <label class="header-checkbox"><input type="checkbox"> Участвовать</label>
                 </form>
 
@@ -87,15 +86,12 @@
     <main>
         <!--PRIZES-->
         <section id="" class="prizes wow fadeInUp">
-
             <div class="prizes-content">
-
                 <h2 class="h2">Получи шанс выиграть 1 из 9 сертификатов:</h2>
-
                 <div class="prizes-cards wow fadeInRight">
                     <div class="prizes-item">
                         <div class="prizes-img">
-                            <img src="img/section2/img4.png" class="" alt="photo">
+                            <img src="img/section2/img4.png" alt="photo">
                         </div>
                         <h4>1 место</h4>
                         <div class="prizes-text">
@@ -103,17 +99,17 @@
                         </div>
                     </div>
 
-                    <div class="prizes-item">
+                    <div class="prizes-item prizes-item--left">
                         <div class="prizes-img">
-                            <img src="img/section2/img2.png" class="" alt="photo">
+                            <img src="img/section2/img2.png" alt="photo">
                         </div>
                         <h4>2 место</h4>
                         <p class="prizes-text"><strong>3</strong> сертификата на <br> лечение волос "гидропластика"</p>
                     </div>
 
-                    <div class="prizes-item">
+                    <div class="prizes-item prizes-item--left">
                         <div class="prizes-img">
-                            <img src="img/section2/img3.png" class="" alt="photo">
+                            <img src="img/section2/img3.png" alt="photo">
                         </div>
                         <h4>3 место</h4>
                         <p class="prizes-text"><strong>5</strong> сертификатов <br> маникюр + покрытие гель лак</p>
@@ -125,8 +121,8 @@
                     <p class="prizes-info--little"><span class="prizes-info--span">Гарантировано</span> для каждого участника</p>
                 </div>
             </div>
-
         </section>
+
         <!--WORKS-->
         <section class="works">
             <div class="works-content">
@@ -138,70 +134,66 @@
                         <div>
                             <div class="works-card">
                                 <div class="works-column">
-                                    <img class="works-img" src="img/works/color1.png" alt="">
-                                    <img class="works-img2 works-img--bottom" src="img/works/color3.png" alt="">
+                                    <div class="works-img"><img src="img/works/color1.png" alt=""></div>
+                                    <div class="works-img2 works-img--bottom"><img src="img/works/color3.png" alt=""></div>
                                 </div>
                                 <div class="works-column">
-                                    <img class="works-img2" src="img/works/color2.png" alt="">
-                                    <img class="works-img works-img--bottom" src="img/works/color6.png" alt="">
+                                    <div class="works-img2"><img src="img/works/color2.png" alt=""></div>
+                                    <div class="works-img works-img--bottom"><img src="img/works/color6.png" alt=""></div>
                                 </div>
                                 <div class="works-column">
-                                    <img class="works-img" src="img/works/color4.png" alt="">
-                                    <img class="works-img2 works-img--bottom" src="img/works/color5.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="works-card">
-                                <div class="works-column">
-                                    <img class="works-img" src="img/works/hairstyle5.png" alt="">
-                                    <img class="works-img2 works-img--bottom" src="img/works/hairstyle1.png" alt="">
-                                </div>
-                                <div class="works-column">
-                                    <img class="works-img2" src="img/works/hairstyle4.png" alt="">
-                                    <img class="works-img works-img--bottom" src="img/works/hairstyle3.png" alt="">
-                                </div>
-                                <div class="works-column">
-                                    <img class="works-img" src="img/works/hairstyle.png" alt="">
-                                    <img class="works-img2 works-img--bottom" src="img/works/hairstyle2.png" alt="">
+                                    <div class="works-img"><img src="img/works/color4.png" alt=""></div>
+                                    <div class="works-img2 works-img--bottom"><img src="img/works/color5.png" alt=""></div>
                                 </div>
                             </div>
                         </div>
                         <div>
                             <div class="works-card">
                                 <div class="works-column">
-                                    <img class="works-img" src="img/works/haircut3.png" alt="">
-                                    <img class="works-img2 works-img--bottom" src="img/works/haircut.png" alt="">
+                                    <div class="works-img"><img src="img/works/hairstyle5.png" alt=""></div>
+                                    <div class="works-img2 works-img--bottom"><img src="img/works/hairstyle1.png" alt=""></div>
                                 </div>
                                 <div class="works-column">
-
-                                    <img class="works-img2" src="img/works/hairstyle.png" alt="">
-                                    <img class="works-img works-img--bottom" src="img/works/haircut2.png" alt="">
-
+                                    <div class="works-img2"><img src="img/works/hairstyle4.png" alt=""></div>
+                                    <div class="works-img works-img--bottom"><img src="img/works/hairstyle3.png" alt=""></div>
                                 </div>
                                 <div class="works-column">
-                                    <img class="works-img" src="img/works/color1.png" alt="">
-                                    <img class="works-img2 works-img--bottom" src="img/works/haircut1.png" alt="">
+                                    <div class="works-img"><img src="img/works/hairstyle.png" alt=""></div>
+                                    <div class="works-img2 works-img--bottom"><img src="img/works/hairstyle2.png" alt=""></div>
                                 </div>
                             </div>
-
                         </div>
-
                         <div>
                             <div class="works-card">
                                 <div class="works-column">
-                                    <div class="works-img"><img class="" src="img/works/hair2.png" alt=""></div>
+                                    <div class="works-img"><img src="img/works/hair2.png" alt=""></div>
                                     <div class="works-img2 works-img--bottom"><img src="img/works/haircut.png" alt=""></div>
                                 </div>
                                 <div class="works-column">
+                                    <div class="works-img2"><img src="img/works/hairstyle.png" alt=""></div>
+                                    <div class="works-img works-img--bottom"><img src="img/works/haircut2.png" alt=""></div>
+                                </div>
+                                <div class="works-column">
+                                    <div class="works-img"><img src="img/works/color1.png" alt=""></div>
+                                    <div class="works-img2 works-img--bottom"><img src="img/works/haircut1.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
 
-                                    <img class="works-img2" src="img/works/hairstyle4.png" alt="">
-                                    <img class="works-img works-img--bottom" src="img/works/hair1.png" alt="">
+                        <div>
+                            <div class="works-card">
+                                <div class="works-column">
+                                    <div class="works-img"><img class="" src="img/works/haircut3.png" alt=""></div>
+                                    <div class="works-img2 works-img--bottom"><img src="img/works/haircut.png" alt=""></div>
+                                </div>
+                                <div class="works-column">
+                                    <div class="works-img2"><img src="img/works/hairstyle4.png" alt=""></div>
+                                    <div class="works-img works-img--bottom"><img src="img/works/hair1.png" alt=""></div>
 
                                 </div>
                                 <div class="works-column">
-                                    <img class="works-img" src="img/works/hair.png" alt="">
-                                    <img class="works-img2 works-img--bottom" src="img/works/haircut1.png" alt="">
+                                    <div class="works-img"><img src="img/works/hair.png" alt=""></div>
+                                    <div class="works-img2 works-img--bottom"><img src="img/works/haircut1.png" alt=""></div>
                                 </div>
                             </div>
 
@@ -213,9 +205,7 @@
                     <div class="btn btn-works btn-works--color">Участвовать</div>
                 </a>
                 <p>*полный список процедур будет выслан на почту после заполнения формы</p>
-
             </div>
-
         </section>
 
         <!--REVIEW-->
@@ -259,7 +249,7 @@
 
 
     <!-- jQuery first -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!--GOOGLE map-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap">
     </script>
@@ -267,6 +257,8 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <!--WOW-->
     <script src="js/wow.min.js"></script>
+    <!-- jQuery плагина Masked Input -->
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/js.js"></script>
 </body>
 
